@@ -152,7 +152,16 @@ const contactInfo = graduates.map(item => {
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
-// console.log(unisWithUni);
+var element = "Uni";
+
+var idx = graduates.indexOf(element);
+while (idx !== -1) {
+  unisWithUni.push(idx);
+  idx = graduates.indexOf(element, idx + 1);
+}
+
+
+console.log(unisWithUni);
 
 // ==== ADVANCED Array Methods ====
 
