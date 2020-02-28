@@ -156,7 +156,7 @@ const unisWithUni = graduates
   .map(e => e.university)
   .filter(name => name.includes("Uni"));
 
-console.log(unisWithUni);
+// console.log(unisWithUni);
 
 // ==== ADVANCED Array Methods ====
 
