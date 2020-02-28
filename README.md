@@ -30,13 +30,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+The first difference between map() and forEach() is the returning value. The forEach() method returns undefined and map() returns a new array with the transformed elements. Even if they do the same job, the returning value remains different.
+The second difference between these array methods is the fact that map() is chainable. This means that you can attach reduce(), sort(), filter() and so on after performing a map() method on an array.
+That's something you can't do with forEach() because, as you might guess, it returns undefined.
+
 2. What is the difference between a function and a method?
+
+Functions are like recipes. They can execute a set of instructions on data or variables and return the result. The beauty of functions is that they are recyclable. That is, the function can be used repeatedly without having to write the same code again.
+A method, like a function, is a set of instructions that perform a task. The difference is that a method is associated with an object, while a function is not. 
 
 3. What is closure?
 
+A closure is a function that has access to its outer function scope even after the outer function has returned. This means a closure can remember and access variables and arguments of its outer function even after the function has finished.
+
 4. Describe the four rules of the 'this' keyword.
 
+Window/Global Object Binding
+When in the global scope, the value of “this” will be the window/console Object;
+Implicit Binding
+Whenever a preceding dot calls a function, the object before the dot is this.
+New binding
+Whenever we use a constructor function, this refers to the specific instance of the object that is created and returned by the constructor function.
+Explicit binding
+Whenever we use JavaScript’s call or apply method, this is explicitly defined.
+
 5. Why do we need super() in an extended class?
+
+To call the Parent function and be able to interact or have access with the Parent Function.
 
 ## Project Set up
 
